@@ -1,0 +1,3 @@
+type=command
+command=sh ${snpEff_sh_PATH}/snpEff-sh.sh ${snpEff_PATH} ${JAVA_MEM} ${annotate.DBversion} ${input.vcf} ${dir.output} ${gs.output} 
+dependencies=0_PrepareDIR.cmd

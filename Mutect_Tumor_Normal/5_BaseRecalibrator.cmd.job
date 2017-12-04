@@ -1,0 +1,12 @@
+type=command
+command=java -Xmx${JAVA_MEM}g -jar ${GATK_DIR}/GenomeAnalysisTK.jar \
+-T BaseRecalibrator \
+--disable_auto_index_creation_and_locking_when_reading_rods \
+-R ${REF_GENOME} \
+-I ${dir.output}/${gs.output}_sorted_dedup.bam \
+-knownSites ${KNOWN_INDEL_1} \
+-knownSites ${KNOWN_INDEL_2} \
+-knownSites ${DBSNP} \
+-nct ${gatk.NCT} \
+-o ${dir.output}/${gs.output}_BQSR.bqs
+dependencies=4_BamIndex.cmd

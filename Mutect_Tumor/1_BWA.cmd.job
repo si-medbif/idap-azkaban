@@ -1,0 +1,4 @@
+type=command
+#command= ${BWA_PATH}/bwa mem -t ${num.thread} -M -R ${libary.input} ${REF_GENOME} ${fastq.input1}  ${fastq.input2} > ${bam.input}.sam
+command=sh ${BWA_Shell_Script} ${BWA_PATH} ${num.thread} ${libary.input} ${fastq.input1} ${fastq.input2} ${REF_GENOME} ${dir.output}/${gs.output}
+dependencies=0_PrepareDIR.cmd

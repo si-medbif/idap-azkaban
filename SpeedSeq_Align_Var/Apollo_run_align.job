@@ -1,0 +1,3 @@
+type=command
+command= /opt/speedseq/bin/speedseq align -t ${num.thread} -T ${tmp.dir} -o ${dir.output}/${gs.output} -R ${libary.input} ${reference.input} ${fastq.input1} ${fastq.input2}
+dependencies=Zeus_mkdir

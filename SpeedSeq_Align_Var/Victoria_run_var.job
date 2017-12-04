@@ -1,0 +1,9 @@
+type=command
+command= /opt/speedseq/bin/speedseq var  -t ${num.thread} -T ${tmp.dir} -o ${dir.output}/${gs.output} -w ${ceph18.annotations} ${reference.input} ${dir.output}/${gs.output}.bam
+dependencies=Apollo_run_align
+
+
+2 6 
+4 4
+6 2
+8 1 	

@@ -1,0 +1,6 @@
+type=command
+command=java  -jar ${PICARD_PATH}/picard.jar FixMateInformation \
+INPUT=${dir.output}/${gs.output}_sorted.bam \
+OUTPUT=${dir.output}/${gs.output}_sorted_fixed.bam \
+TMP_DIR=${tmp.dir}/${gs.output}
+dependencies=2_Sort.cmd

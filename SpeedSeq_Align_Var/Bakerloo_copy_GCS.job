@@ -1,0 +1,3 @@
+type=command
+command= gsutil -m cp -r ${dir.output}/*  gs://pilotwgs_result/${gs.output}
+dependencies=Victoria_run_var

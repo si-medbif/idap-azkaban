@@ -1,0 +1,3 @@
+type=command
+command= cd ${dir.output} ;gsutil -m cp -r ${dir.output}/*  gs://pilotwgs_result/${gs.output}
+dependencies=Apollo_run_align

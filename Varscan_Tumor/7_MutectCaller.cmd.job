@@ -1,0 +1,11 @@
+type=command
+command=java -jar ${GATK_DIR}/mutect-1.1.7.jar \
+--analysis_type MuTect \
+--input_file:tumor ${dir.output}/${gs.output}_GATK.bam \
+--reference_sequence ${REF_GENOME} \
+--dbsnp ${DBSNP} \
+--cosmic ${COSMIC} \
+--out ${dir.output}/${gs.output}.call_stats.txt \
+--coverage_file ${dir.output}/${gs.output}.coverage.wig.txt \
+-vcf ${dir.output}/${gs.output}.g.vcf
+dependencies=6_PrintReads.cmd
