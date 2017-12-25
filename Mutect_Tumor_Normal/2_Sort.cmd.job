@@ -1,7 +1,0 @@
-type=command
-command=java -Xmx${JAVA_MEM}g -jar ${PICARD_PATH}/picard.jar SortSam \
-INPUT=${dir.output}/${gs.output}.sam \
-OUTPUT=${dir.output}/${gs.output}_sorted.bam \
-SORT_ORDER=coordinate \
-TMP_DIR=${tmp.dir}/${gs.output}
-dependencies=1_BWA.cmd

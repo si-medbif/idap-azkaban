@@ -1,3 +1,0 @@
-type=command
-command=  rm -rf ${dir.output}/${gs.output}
-dependencies=8_UploadToGS.cmd

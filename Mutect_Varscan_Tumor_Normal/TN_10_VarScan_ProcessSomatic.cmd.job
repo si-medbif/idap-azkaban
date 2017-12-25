@@ -1,0 +1,8 @@
+type=command
+command=java -jar ${VarScan_DIR}/VarScan.v2.3.9.jar processSomatic \
+<intermediate_varscan_somatic.vcf> \
+--min-tumor-freq 0.10 \
+--max-normal-freq 0.05 \
+--p-value 0.07
+TMP_DIR=${tmp.dir}/${gs.output}
+dependencies=TN_9_VarScan2.cmd

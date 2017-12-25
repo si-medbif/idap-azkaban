@@ -1,3 +1,0 @@
-type=command
-command= gsutil cp -r  ${gs.input}  ${dir.output}
-dependencies=Starter

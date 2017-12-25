@@ -1,0 +1,3 @@
+type=command
+command= gsutil cp -r  ${gs.input}  ${dir.output}
+dependencies=TN_Mutect_Varscan_Starter

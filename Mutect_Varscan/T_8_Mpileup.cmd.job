@@ -1,0 +1,4 @@
+type=command
+command=/opt/samtools-1.5/samtools mpileup -C50 -f /opt/gatk_resource/ucsc.hg19.fasta -q 1 -B BTN-034_Sample_GATK.bam > BTN-034_Sample_GATK.T.bam.mpileup
+TMP_DIR=${tmp.dir}/${gs.output}
+dependencies=T_6_PrintReads.cmd

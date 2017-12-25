@@ -1,8 +1,0 @@
-type=command
-command=java  -jar ${PICARD_PATH}/picard.jar MarkDuplicates \
-INPUT=${dir.output}/${gs.output}_sorted.bam \
-OUTPUT=${dir.output}/${gs.output}_sorted_dedup.bam \
-METRICS_FILE=${dir.output}/${gs.output}_dedup.matrics \
-CREATE_INDEX=TRUE \
-TMP_DIR=${tmp.dir}/${gs.output}
-dependencies=2_Sort.cmd

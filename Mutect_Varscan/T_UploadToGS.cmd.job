@@ -1,0 +1,3 @@
+type=command
+command= gsutil -m cp -r ${dir.output}/*.g.*  ${gs.dir.output}/${gs.output}
+dependencies=T_7_MutectCaller.cmd,T_10_VarScan_ProcessSomatic.cmd

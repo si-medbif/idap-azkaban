@@ -1,0 +1,11 @@
+type=command
+command=java -Xmx${JAVA_MEM}g -jar ${GATK_DIR}/GenomeAnalysisTK.jar \
+-T PrintReads \
+-R ${REF_GENOME} \
+-I ${dir.output}/${gs.output}_sorted_dedup.bam \
+-BQSR ${dir.output}/${gs.output}_BQSR.bqs \
+-dt NONE \
+-EOQ \
+-nct ${gatk.NCT}  \
+-o ${dir.output}/${gs.output}_GATK.bam
+dependencies=T_5_BaseRecalibrator.cmd

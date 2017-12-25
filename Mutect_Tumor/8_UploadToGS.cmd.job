@@ -1,3 +1,0 @@
-type=command
-command= gsutil -m cp -r ${dir.output}/*.g.*  ${gs.dir.output}/${gs.output}
-dependencies=7_MutectCaller.cmd
