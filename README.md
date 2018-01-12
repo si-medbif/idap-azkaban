@@ -1,10 +1,10 @@
 # idap-azkaban-jobs
 
 
-## Requiremnts  
-1. GCP Account
-2.
-3. 
+## Requirements  
+1. GCP (Google Cloud Platform) Account / Understainding Google cloud  architecture 
+2. [Azkaban](http://azkaban.github.io/azkaban/docs/latest/) 
+3. NGS Tools
 
 
 ## Full Document 
